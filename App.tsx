@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import Main from './src/authenticated/Main';
 import Search from './src/authenticated/Search';
 import Schedule from './src/authenticated/Schedule';
 import Chat from './src/authenticated/Chat';
-import MyTabBar from './src/authenticated/TabBar';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Platform } from 'react-native';
 
 // import MyTabBar from './src/authenticated/TabBar';
 
@@ -36,7 +36,7 @@ export default function App() {
 			})} */
 			
 			}
-			<Tab.Navigator tabBarPosition='bottom' style={styles.userData}
+			<Tab.Navigator tabBarPosition='bottom' style={styles.tabBar}
 				screenOptions={({ route }) => ({
 					//tabBarLabelStyle: {fontSize: 11, fontWeight: '600'}
 					tabBarIcon: ({ focused, color}) => {
@@ -59,9 +59,9 @@ export default function App() {
 					},
 					tabBarActiveTintColor: 'green',
 					tabBarInactiveTintColor: 'gray',
+					tabBarLabelStyle: {fontSize: 11, fontWeight: "700"},
+
 				  })}
-		  
-			
 			>
 				<Tab.Screen name='Home' component={Main} />
 				<Tab.Screen name='Search' component={Search} />
@@ -73,9 +73,10 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  	userData: {
+  	tabBar: {
     	flex: 1,
-		paddingBottom: 30,
+		paddingBottom: Platform.OS === "ios" ? 30 : 0,
 		paddingHorizontal: 5,
+		paddingTop: Platform.OS === "ios" ? 60 : 0,
   	}
 });
