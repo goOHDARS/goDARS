@@ -14,17 +14,29 @@ export default function Main(){
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white' }}>
             <Modal animationType="slide" transparent={false} visible={modalVisible} onRequestClose={() => setModalVisible(!modalVisible)}>
-                <View>
-                    <Text>
-                        Hello World
-                    </Text>
+                <View style={styles.centeredContent}>
+                    <Pressable onPress={() => setModalVisible(false)}>
+                        <Text>
+                            Hello World
+                        </Text>
+                    </Pressable>
                 </View>
             </Modal>
-            <Pressable onPress={() => setModalVisible(true)}>
-                <Text>
-                    Fuck React Native
-                </Text>
+            <Pressable style={{backgroundColor: "#024230"}} onPress={() => setModalVisible(true)}>
+                <View style={{minWidth: "75%", height: "35%", borderRadius: 20, alignItems: "center"}}>
+                    <Text style={{color: "#fff"}}>
+                        Fuck React Native
+                    </Text>
+                </View>
             </Pressable>
         </View>
         );
 }
+
+const styles = StyleSheet.create({
+    centeredContent: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+    },
+});
