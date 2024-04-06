@@ -6,10 +6,10 @@
 */
 
 import React from "react";
-import { View } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 
-export function Main(){
+export default function Main(){
 
 
-    return (<View></View>);
+    return (<View><Text>Hello World</Text></View>);
 }

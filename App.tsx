@@ -1,43 +1,53 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Main } from './src/Main';
-import { Search } from './src/Search';
-import { Schedule } from './src/Schedule';
-import { Chat } from './src/Chat';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import Main from './src/authenticated/Main';
+import Search from './src/authenticated/Search';
+import Schedule from './src/authenticated/Schedule';
+import Chat from './src/authenticated/Chat';
+import MyTabBar from './src/authenticated/TabBar';
+// import MyTabBar from './src/authenticated/TabBar';
 
 
-const Tab = createBottomTabNavigator();
+const Tab = createMaterialTopTabNavigator();
 
 export default function App() {
   	return (
-		<View>
-			<NavigationContainer>
-				<Tab.Navigator>
-					<Tab.Screen name='Home' component={Main}>
+		<NavigationContainer>
+			{/* screenOptions={ ({ route }) => ({
+				tabBarIcon: ({ focused, color, size }) => {
+					let iconName;
 
-					</Tab.Screen>
-					<Tab.Screen name='Search' component={Search}>
+					if (route.name === "Home"){
+					}
+					else if (route.name === "Search"){
+					}
+					else if (route.name === "Scheduler"){
+					}
+					else{
+						
+					}
+				}
 
-					</Tab.Screen>
-					<Tab.Screen name='Scheduler' component={Schedule}>
-
-					</Tab.Screen>
-					<Tab.Screen name='Chat' component={Chat}>
-
-					</Tab.Screen>
-				</Tab.Navigator>
-			</NavigationContainer>
-		</View>
+				tabBar={props => <MyTabBar {...props} />}
+			})} */
+			
+			}
+			<Tab.Navigator tabBarPosition='bottom' initialRouteName='Home' style={styles.userData} screenOptions={{ tabBarLabelStyle: {fontSize: 11, fontWeight: '600'}}}>
+				<Tab.Screen name='Home' component={Main} />
+				<Tab.Screen name='Search' component={Search} />
+				<Tab.Screen name='Schedule' component={Schedule} />
+				<Tab.Screen name='Chat' component={Chat} />
+			</Tab.Navigator>
+		</NavigationContainer>
   	);
 }
 
 const styles = StyleSheet.create({
   	userData: {
     	flex: 1,
-    	alignItems: 'flex-start',
-    	fontSize: 20,
-    	fontWeight: '400',
+		paddingBottom: 30,
+		paddingHorizontal: 5,
   	}
 });
