@@ -77,6 +77,6 @@ const styles = StyleSheet.create({
     	flex: 1,
 		paddingBottom: Platform.OS === "ios" ? 30 : 0,
 		paddingHorizontal: 5,
-		paddingTop: Platform.OS === "ios" ? 60 : 0,
+		paddingTop: Platform.OS === "ios" ? 70 : 0,
   	}
 });
