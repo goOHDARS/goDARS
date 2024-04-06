@@ -1,0 +1,452 @@
+{
+    "Classes" : {
+        "CS2400": [
+            {
+                "shortName" : "CS2400",
+                "fullName" : "Intro to Computer Science I",
+                "college" : "CS",
+                "credits" : 4,
+                "description" : "Introduction to computer science, the discipline of computing, and the programming language C++. Topics include elementary C++, computer algorithms, flow of control, procedural abstraction, functions, streams, arrays, strings, objects and classes, polymorphism and operator overloading.",
+                "lab" : "CS2400",
+                "semester" : "Both",
+                "prereq" : [""]
+            }
+        ],
+
+        "EE1024": [
+            {
+                "shortName" : "EE1024",
+                "fullName" : "Intro to Computer Engineering",
+                "college" : "EE",
+                "credits" : 4,
+                "description" : "Introduction to the field of computer engineering. Develops a knowledge of the fundamentals of Boolean algebra, binary arithmetic, characteristics of logic gates, and flip-flops. Lab work provides hands-on experience with digital systems.",
+                "lab" : "EE1024",
+                "semester" : "Both",
+                "prereq" : [""]
+            }
+        ],
+        "MATH2301": [
+            {
+                "shortName" : "MATH2301",
+                "fullName" : "Calculus I",
+                "college" : "MATH",
+                "credits" : 4,
+                "description" : "First course in calculus and analytic geometry with applications in the sciences and engineering. Includes basic techniques of differentiation and integration with applications including rates of change, optimization problems, and curve sketching; includes exponential, logarithmic and trigonometric functions. Calculus is the mathematical language used to describe and analyze change. The course emphasizes how this abstract language and its associated techniques provide a unified way of approaching problems originating in disparate areas of science, technology, and society, highlighting how questions arising in different fields are connected to the same fundamental mathematical ideas.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["MATH1300"]
+            }
+        ],
+        "HIST2905": [
+            {
+                "shortName" : "HIST2905",
+                "fullName" : "History of Engineering & Technology in Society",
+                "college" : "HIST",
+                "credits" : 3,
+                "description" : "From hand tools, stirrups, and windmills to lasers, batteries, and biotechnology, human history and technology can only be understood together. This course explores the ways in which technology has shaped human society. It focuses on important themes, including the Industrial Revolution, infrastructure, and the historical relationship between technological experts (including engineers, technologists, and scientists), society, and the state. The course pays particular attention to technology’s social and historical consequences; the human and environmental contexts of technological infrastructures; and historical debates over what constitutes an ethical model of technological innovation. It covers the historical and modern development of professions based on technology, including those requiring licensure. In this way, the course provides a critical perspective for an informed approach to technology and society in the modern world.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : [""]
+            }
+        ],
+        "CS2401": [
+            {
+                "shortName" : "CS2401",
+                "fullName" : "Intro to Computer Science II",
+                "college" : "CS",
+                "credits" : 4,
+                "description" : "Continuation of CS 2400 with emphasis on design of software and more advanced features of the objected oriented programming language C++. Topics include design of software using UML, generic programming (templates), linked lists, stacks, queues, container classes and iterators, inheritance, derived classes, virtual functions, tree data structures, and recursion.",
+                "lab" : "CS2401",
+                "semester" : "Both",
+                "prereq" : ["CS2400, MATH2301"]
+            }
+        ],
+        "ENG1510": [
+            {
+                "shortName" : "ENG1510",
+                "fullName" : "Writing and Rhetoric I",
+                "college" : "ENG",
+                "credits" : 3,
+                "description" : "",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : [""]
+            }
+        ],
+        "MATH2302": [
+            {
+                "shortName" : "MATH2302",
+                "fullName" : "Calculus II",
+                "college" : "MATH",
+                "credits" : 4,
+                "description" : "",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["MATH2302"]
+            }
+        ],
+        "ET1500": [
+            {
+                "shortName" : "ET1500",
+                "fullName" : "Career Orientation",
+                "college" : "ET",
+                "credits" : 0.5,
+                "description" : "Introduces students to important theories, concepts, and skills related to conducting an effective career search for co-op and full-time positions. In this course, career-related issues are discussed, and students complete assignments that relate to the main course topics.",
+                "lab" : "",
+                "semester" : "Spring",
+                "prereq" : [""]
+            }
+        ],
+        "CS3000": [
+            {
+                "shortName" : "CS3000",
+                "fullName" : "Intro to Discrete Structures",
+                "college" : "CS",
+                "credits" : 4,
+                "description" : "Discrete mathematics and its application to computer science explored. Foundational mathematical techniques used in computer science are explored in depth: propositional logic, number theory and proofs, sequences and mathematical induction, set theory, counting and combinatorics, discrete probability, functions, recursion, simple analysis of algorithms, and orderings and relations. Applications of these structures to various areas of computer science also covered.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["CS2400"]
+            }
+        ],
+        "EE3713": [
+            {
+                "shortName" : "EE3713",
+                "fullName" : "Applied Probability and Statistics for EE",
+                "college" : "EE",
+                "credits" : 3,
+                "description" : "Fundamentals of statistics and probability and the ability to apply them to problems in electrical engineering.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["MATH2302"]
+            }
+        ],
+        "CS2653": [
+            {
+                "shortName" : "CS2653",
+                "fullName" : "Professional & Ethical Computing",
+                "college" : "CS",
+                "credits" : 3,
+                "description" : "Examines the professional, ethical, and legal issues that are likely to be encountered by computing professionals, both locally and globally. Topics include privacy, information security issues, freedom of speech, intellectual property, software licensing, regulations pertaining to computing professionals, copyright, and broader issues on the impact of computers on society. Covers professional ethics and responsibilities as well as general theories of normative ethics. Issues of diversity and practice related to computing and engineering are explored as well, including algorithmic bias. Students explore cultural self-awareness, cultural worldwide frameworks, empathy, verbal and non-verbal communications, curiosity, and openness in the context of a practicing professional in the discipline.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["CS2400"]
+            }
+        ],
+        "CS3560": [
+            {
+                "shortName" : "CS3560",
+                "fullName" : "Software Engineering Tools",
+                "college" : "CS",
+                "credits" : 3,
+                "description" : "Covers current software engineering tools and practices. Topics include software architecture, integrated development environments, source code control systems, build and make systems, debuggers, static analysis tools, dynamic analysis tools, design tools, program verification, and design patterns. Experiences in multiple environments (Windows and a UNIX-based environment, i.e., MAC OS, Linux, or Solaris).",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["CS3610"]
+            }
+        ],
+
+        "CS3610": [
+            {
+                "shortName" : "CS3610",
+                "fullName" : "Data Structures",
+                "college" : "CS",
+                "credits" : 4,
+                "description" : "Various data structures, algorithms associated with data structures, and analysis of algorithms are explored. Topics include analysis of algorithms, dynamic arrays, tree structures, heaps, balanced trees, dictionaries, graphs and graph algorithms, and the complexity of sorting. Graph algorithms for depth first and breadth first search, shortest path, minimum cost spanning trees, and others are covered. Coverage of built in data structures and algorithms in modern programming languages included.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["CS2401", "CS3000"]
+            }
+        ],
+        "MATH3200": [
+            {
+                "shortName" : "MATH3200",
+                "fullName" : "Applied Linear Algebra",
+                "college" : "MATH",
+                "credits" : 3,
+                "description" : "A course on linear algebra with an emphasis on applications and computations. Solutions to linear systems, matrices and matrix algebra, determinants, n-dimensional real vector spaces and subspaces, bases and dimension, eigenvalues and eigenvectors, diagonalization, norms, inner product spaces, orthogonality and least squares problems.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["MATH2301"]
+            }
+        ],
+        "MATH3210": [
+            {
+                "shortName" : "MATH3210",
+                "fullName" : "Linear Algebra",
+                "college" : "MATH",
+                "credits" : 3,
+                "description" : "A course in linear algebra for students majoring or minoring in the mathematical sciences. The course will introduce both the practical and theoretical aspects of linear algebra and students will be expected to complete both computational and proof-oriented exercises. Topic covered will include: Solutions to linear systems, matrices and matrix algebra, determinants, n-dimensional real vector spaces and subspaces, bases and dimension, linear mappings, matrices of linear mappings, eigenvalues and eigenvectors, diagonalization, inner product spaces, orthogonality and applications.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["MATH2302", "CS3000"]
+            }
+        ],
+        "PHYS2055": [
+            {
+                "shortName" : "PHYS2052",
+                "fullName" : "General Physics I Laboratory",
+                "college" : "PHYS",
+                "credits" : 1,
+                "description" : "This course is the laboratory course that is paired with PHYS 2054 for General Education and TAGs credit.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["PHYS2054"]
+            }
+        ],
+
+        "PHYS2052": [
+            {
+                "shortName" : "PHYS2052",
+                "fullName" : "General Physics I",
+                "college" : "PHYS",
+                "credits" : 3,
+                "description" : "Classical physics with calculus and vectors. Topics include: electrostatics: conductors and insulators, Coulomb’s Law, Gauss’s Law, electric field and potential, capacitance, energy storage in an electric field; electric current: current flow in materials, circuits with batteries, resistors, capacitors, inductors and diodes; magnetism and magnetic fields: magnetic forces on moving charges and current carrying conductors, magnetic fields produced by electric currents and moving charges, electric induction including Faraday’s Law, Lens’s Law, and induced electric fields, transformers; properties of electromagnetic waves: transmission, detection, reflection, refraction, polarization; Optics: images formed by plane mirrors, spherical mirrors, and thin lenses; Interference of light: Young’s Double Slit interference, Thin Film Interference, Diffraction by single and multiple slits.",
+                "lab" : "PHYS2055",
+                "semester" : "Both",
+                "prereq" : ["MATH2301"]
+            }
+        ],
+
+        "PHYS2057": [
+            {
+                "shortName" : "PHYS2057",
+                "fullName" : "General Physics II Laboratory",
+                "college" : "PHYS",
+                "credits" : 1,
+                "description" : "This course is the laboratory course that is paired with PHYS 2056 for General Education and TAGs credit.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["PHYS2056"]
+            }
+        ],
+        "PHYS2056": [
+            {
+                "shortName" : "PHYS2056",
+                "fullName" : "General Physics II: Electricity and Magnetism",
+                "college" : "PHYS",
+                "credits" : 3,
+                "description" : "This is the second of a three-semester sequence of introductory physics classes for scientists and engineers that uses calculus and vectors. Topics include: electrostatics: conductors and insulators,Coulomb’s Law, Gauss’s Law, electric field and potential, capacitance, energy storage in an electric field;electric current: current flow in materials, circuits with batteries, resistors, capacitors, inductors and diodes; magnetism and magnetic fields: magnetic forces on moving charges and current carrying conductors,magnetic fields produced by electric currents and moving charges, electric induction including Faraday’s Law,Lens’s Law, and induced electric fields, transformers; properties of electromagnetic waves: transmission,detection, reflection, refraction, polarization; Optics: images formed by plane mirrors, spherical mirrors, and thin lenses; Interference of light: Young’s Double Slit interference, Thin Film Interference, Diffraction by single and multiple slits.",
+                "lab" : "PHYS2055",
+                "semester" : "Both",
+                "prereq" : ["MATH2301"]
+            }
+        ],
+        "CS3200": [
+            {
+                "shortName" : "CS3200",
+                "fullName" : "Organization of Programming Languages",
+                "college" : "CS",
+                "credits" : 3,
+                "description" : "A hands-on introduction to the science of programming and programming languages, including topics such as: structured data and pattern-matching, recursive and polymorphic data, recursion and higher-order functions, lazy evaluation and streams, automated and equational reasoning about programs, concrete and abstract syntax, grammars, interpreters, desugaring, types and type-checking, type safety, mutable state, references, and objects. Over the course of the semester, students build interpreters and type checkers for a series of increasingly complex languages.",
+                "lab" : "",
+                "semester" : "Fall",
+                "prereq" : ["CS3610"]
+            }
+        ],
+
+        "CS4040": [
+            {
+                "shortName" : "CS4040",
+                "fullName" : "Design and Analysis of Algorithms",
+                "college" : "CS",
+                "credits" : 3,
+                "description" : "Introduces modern study of computer algorithms. Topics include correctness of algorithms, analysis of iterative and recursive algorithms, worst-case, best-case, average-case, and amortized behavior, design of algorithms, divide and conquer algorithms, the greedy method, graph searching, and dynamic programming techniques. Selected additional topics may include computational geometry or NP-completeness.",
+                "lab" : "",
+                "semester" : "Fall",
+                "prereq" : ["CS3610"]
+            }
+        ],
+
+        "EE3613": [
+            {
+                "shortName" : "EE3613",
+                "fullName" : "Computer Organization",
+                "college" : "EE",
+                "credits" : 3,
+                "description" : "Computer organization and architecture with emphasis in the design of single and multicore architectures; quantitative cost, performance-power trade-offs, Amdahl’s Law, instruction set architecture (RISC), assembly language programming, number representations, adders and simple ALUs, integer and floating point computer arithmetic, single and multi-cycle implementation of control and data-path design, pipelining with hazard detection, memory hierarchy and memory management, cache and virtual memory, and I/O devices. Term paper/project involving computer hardware design and system simulation required.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["CS2400", "EE1024"]
+            }
+        ],
+        "CS4100": [
+            {
+                "shortName" : "CS4100",
+                "fullName" : "Introduction to Formal Languages and Compilers",
+                "college" : "CS",
+                "credits" : 3,
+                "description" : "A course on formal languages theory and compilers. Topics may include, but are not limited to: regular expressions; finite automata; context-free grammars; predictive parsing; LR parsing; abstract syntax; type systems and type-checking; stack layout and activation records; intermediate representations; control-flow graphs; static-single assignment (SSA) form; dataflow/liveness analysis; register allocation; garbage collection/runtimes; the LLVM compiler infrastructure. Over the course of the semester, students will implement a compiler for a small imperative programming language, targeting an intermediate representation such as LLVM. This course involves a significant amount of programming.",
+                "lab" : "",
+                "semester" : "Spring",
+                "prereq" : ["CS3200", "CS3610"]
+            }
+        ],
+
+
+        "EE3954": [
+            {
+                "shortName" : "EE3954",
+                "fullName" : "Microprocessors and Microcontrollers",
+                "college" : "EE",
+                "credits" : 4,
+                "description" : "Introduction to microcontrollers and their architecture; assembly language; timing analysis of assembly language programs; digital input/output (I/O); in-depth discussion on the use of built-in peripheral devices such as timers, analog-to-digital converters, EEPROM storage devices, capture/compare/PWM, and parallel and serial communication devices; serial communication includes both synchronous communication (SPI, I2C) and asynchronous (USART) communication; introduction to systems of networked microcontrollers; advanced fixed-point arithmetic on a microcontroller.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["CS2400", "EE1024"]
+            }
+        ],
+
+        "CS4000": [
+            {
+                "shortName" : "CS4000",
+                "fullName" : "Introduction to Distributed, Parallel, and Web-Centric Computing",
+                "college" : "CS",
+                "credits" : 3,
+                "description" : "Provides introduction to distributed, parallel, and web-centric computing, along with enabling technologies (e.g., networking). Introduces distributed and parallel models of computation, distributed and parallel computer architectures, multi-core designs, potential speed-up, threading, synchronization, and multi-core programming, parallel and distributed algorithms, sockets and client-server based software, web programming, accessing databases across the web, and web-security.",
+                "lab" : "",
+                "semester" : "Spring",
+                "prereq" : ["CS3560", "CS3610"]
+            }
+        ],
+
+        "CS4560": [
+            {
+                "shortName" : "CS4560",
+                "fullName" : "Software Design and Development I",
+                "college" : "CS",
+                "credits" : 3,
+                "description" : "All major phases of the software engineering lifecycle, including system engineering, requirements analysis, design, implementation and testing. Communication skills relevant to working in software engineering teams and interacting with customers. Teams of students perform all software engineering phases in response to the needs of a customer.",
+                "lab" : "",
+                "semester" : "Fall",
+                "prereq" : ["CS3560", "CS3610"]
+            }
+        ],
+        "CS4420": [
+            {
+                "shortName" : "CS4420",
+                "fullName" : "Operating Systems",
+                "college" : "CS",
+                "credits" : 3,
+                "description" : "In-depth coverage of computer operating systems and related computer architecture issues. Coverage of physical devices, interrupts, and communication between the computer and external hardware. Interfaces between user programs and the operating system, system calls, software interrupts, and protection issues. Context switching, process address spaces, and process scheduling. Process synchronization, interprocess communications, critical sections, and deadlock detection and recovery. Memory mapping, swapping, paging, and virtual memory.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["EE3613", "CS3610", "EE3954"]
+            }
+        ],
+        "CS4561": [
+            {
+                "shortName" : "CS4561",
+                "fullName" : "Software Design and Development II",
+                "college" : "CS",
+                "credits" : 3,
+                "description" : "Continuation of CS 4560. All major phases of the software engineering lifecycle, including system engineering, requirements analysis, design, implementation and testing. Communication skills relevant to working in software engineering teams and interacting with customers. Teams of students perform all software engineering phases in response to the needs of a customer.",
+                "lab" : "",
+                "semester" : "Spring",
+                "prereq" : ["CS4560"]
+            }
+        ],
+
+
+
+        "CHEM1510": [
+            {
+                "shortName" : "CHEM1510",
+                "fullName" : "Fundamentals of Chemistry I",
+                "college" : "CHEM",
+                "credits" : 4,
+                "description" : "General course in fundamental chemical principles. Atomic structure, periodic classification, bonding, mole concept, stoichiometry with problem solving, thermochemistry, equilibrium, and gases. Recommended for majors in chemistry, engineering, biological sciences, plant biology, clinical laboratory science, geological sciences, secondary education (B.S.Ed. in biological sciences, chemistry, physics, and integrated science), and preprofessional (biological science) areas.",
+                "lab" : "CHEM1510",
+                "semester" : "Both",
+                "prereq" : []
+            }
+        ],
+
+        "CHEM1520": [
+            {
+                "shortName" : "CHEM1520",
+                "fullName" : "Fundamentals of Chemistry II",
+                "college" : "CHEM",
+                "credits" : 4,
+                "description" : "General course in fundamental chemical principles. Intermolecular forces and phase changes, solutions and colligative properties, chemical kinetics, chemical equilibrium, acid-base equilibria, thermodynamics (entropy and free energy), electrochemistry, descriptive chemistry, and nuclear chemistry. Recommended for majors in chemistry, engineering, biological sciences, plant biology, clinical laboratory science, geological sciences, secondary education (B.S.Ed. in biological sciences, chemistry, physics, and integrated science), and preprofessional (biological science) areas.",
+                "lab" : "CHEM1520",
+                "semester" : "Both",
+                "prereq" : ["CHEM1510"]
+            }
+        ],
+        "PBIO1140": [
+            {
+                "shortName" : "PBIO1140",
+                "fullName" : "Foundations of Plant Biology",
+                "college" : "PBIO",
+                "credits" : 4,
+                "description" : "Introduces the concepts of plant physiology and cellular and molecular biology that are the foundation of all biological processes. Topics include DNA structure and function leading to genetics and evolution, theories of the origins of life leading to cell structure and function, and bioenergetics. The lab provides supplemental information and hands on activities to reinforce the lecture topics.",
+                "lab" : "PBIO1140",
+                "semester" : "Both",
+                "prereq" : [""]
+            }
+        ],
+        "PBIO1150": [
+            {
+                "shortName" : "PBIO1150",
+                "fullName" : "Plant Structure and Development",
+                "college" : "PBIO",
+                "credits" : 4,
+                "description" : "For plant biology and other science majors, preprofessional students and science modular students. Introduction to structure, growth, development, and reproductive biology of plants with emphasis on flowering plants.",
+                "lab" : "PBIO1150",
+                "semester" : "Both",
+                "prereq" : ["PBIO1140"]
+            }
+        ],
+        "BIOS1705": [
+            {
+                "shortName" : "BIOS1705",
+                "fullName" : "Biological Sciences I Laboratory",
+                "college" : "BIOS",
+                "credits" : 1,
+                "description" : "Laboratory course to accompany BIOS 1700.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["BIOS1700"]
+            }
+        ],
+
+        "BIOS1700": [
+            {
+                "shortName" : "BIOS1700",
+                "fullName" : "Biological Sciences I: Molecules and Cells",
+                "college" : "BIOS",
+                "credits" : 3,
+                "description" : "Cellular and molecular biology. Designed for science majors and preprofessional students. Introduction to the chemistry of life, cell structure and function, and the principles of inheritance.",
+                "lab" : "BIOS1705",
+                "semester" : "Both",
+                "prereq" : [""]
+            }
+        ],
+
+        "BIOS1715": [
+            {
+                "shortName" : "BIOS1715",
+                "fullName" : "Biological Sciences II Laboratory",
+                "college" : "BIOS",
+                "credits" : 1,
+                "description" : "Laboratory survey of the major phyla of the animal kingdom to reveal evolutionary relationships and structural and functional characteristics. Laboratory includes microscopy and dissection.",
+                "lab" : "",
+                "semester" : "Both",
+                "prereq" : ["BIOS1710"]
+            }
+        ],
+        "BIOS1710": [
+            {
+                "shortName" : "BIOS1710",
+                "fullName" : "Biological Sciences II: Ecology, Evolution, Animal Body Systems",
+                "college" : "BIOS",
+                "credits" : 3,
+                "description" : "Animal organ systems. Designed for science majors and preprofessional students. Introduction to multicellular life, organ systems, anatomy, physiology, and animal development; emphasis is on comparative strategies within the animal kingdom. Ecology and evolutionary biology. Introduction to the principles of evolution, ecology, and behavior.",
+                "lab" : "BIOS1715",
+                "semester" : "Both",
+                "prereq" : ["BIOS1700"]
+            }
+        ]
+    }
+}
