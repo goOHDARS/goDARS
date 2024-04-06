@@ -6,18 +6,27 @@
 */
 
 import React, { useState } from "react";
-import { View, StyleSheet, Text, ScrollView, Modal, Pressable } from "react-native";
+import { View, StyleSheet, Text, ScrollView, Modal, Pressable, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Image } from "react-native";
 
 export default function Main(){
     const [modalVisible, setModalVisible] = useState(false);
 
     return (
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fff' }}>
-            <SafeAreaView>
-                <Text>
-                    Your mom
-                </Text>
+            <SafeAreaView style={{paddingBottom: 20, justifyContent: "space-between", flexDirection: "row"}}>
+                <View style={{flex: 1, flexDirection: "column", marginLeft: 20}}>
+                    <Text style={{ fontSize: 28, fontWeight: "600" }}>
+                        Charizard, Lizardon
+                    </Text>
+                    <Text style={{ fontSize: 16, fontWeight: "300" }}>
+                        COMPUTER SCIENCE
+                    </Text>
+                </View>
+                <Pressable onPress={() => setModalVisible(true)}>
+                    <Image source={require('../../../assets/android-chrome-256x256.png')} style={{width: 60, height: 60, borderRadius: 100, borderColor: "black", borderWidth: 2, justifyContent: "center", alignItems: "center", marginRight: 20}}></Image>
+                </Pressable>
             </SafeAreaView>
             <Modal animationType="slide" transparent={false} visible={modalVisible} onRequestClose={() => setModalVisible(!modalVisible)}>
                 <View style={styles.centeredContent}>
