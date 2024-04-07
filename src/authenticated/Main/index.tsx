@@ -18,10 +18,15 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Image } from "react-native";
 import Divider from "../../divider";
+import { useAppDispatch, useAppSelector } from "../../hooks"
+import GestureRecognizer from 'react-native-swipe-gestures';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default function Main(){
     const [modalVisible, setModalVisible] = useState(false);
     const [toggleProfileModal, setProfileModal] = useState(false);
+    // const dispatch = useAppDispatch();
+    // const user = useAppSelector(state => state.user);
 
     return (
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fff' }}>
@@ -38,15 +43,30 @@ export default function Main(){
                     <Image source={require('../../../assets/android-chrome-256x256.png')} style={{width: 60, height: 60, borderRadius: 100, borderColor: "black", borderWidth: 2, justifyContent: "center", alignItems: "center", marginRight: 20}}></Image>
                 </Pressable>
             </SafeAreaView>
-            <Modal animationType="slide" transparent={false} visible={toggleProfileModal} onRequestClose={() => setModalVisible(!modalVisible)} style={{flex: 1, width: "100%", height: "75%", alignItems:"flex-end"}}>
-                <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "blue", maxHeight: "75%"}}>
-                    <Pressable onPress={() => setProfileModal(false)}>
-                        <Text style={{fontSize: 14, fontWeight: "500"}}>
-                            This is my profile
-                        </Text>
-                    </Pressable>
-                </View>
-            </Modal>
+            <GestureRecognizer
+                config={{velocityThreshold: 0.3, directionalOffsetThreshold: 20}}
+                onSwipeDown={ () => setProfileModal(false) }
+            >
+                <Modal onDismiss={() => setProfileModal(false)} presentationStyle="formSheet" animationType="slide" transparent={false} visible={toggleProfileModal}>
+                    <View style={{ flex: 1, backgroundColor: "#024230"}}>
+                        {/* <View style={{ flex: 1, alignItems: "flex-end", justifyContent: "flex-start", padding: 20}}> */}
+                        <Pressable onPress={() => setProfileModal(false)}>
+                            <View style={{alignItems: "flex-end", justifyContent: "flex-start", paddingTop: 20, paddingRight: 20}}>
+                                <Ionicons name={"close-circle-outline"} size={40} color={"white"} />
+                                <Text style={{ color: "#fff", fontWeight: "700" }}>close</Text>
+                            </View>
+                        </Pressable>
+                        <View style={{flex: 1, justifyContent: "center"}}>
+                            <Text style={{fontSize: 24, color: "#fff", fontWeight: "500", alignSelf: "center", paddingBottom: 10}}>Charizard, Lizardon</Text>
+                            <Text style={{fontSize: 24, color: "#fff", fontWeight: "500", alignSelf: "center", paddingBottom: 10}}>P101048083</Text>
+                            <Text style={{fontSize: 24, color: "#fff", fontWeight: "500", alignSelf: "center", paddingBottom: 10}}>Credit Hours: 420</Text>
+                            <Text style={{fontSize: 24, color: "#fff", fontWeight: "500", alignSelf: "center", paddingBottom: 10}}>GPA: 4.0</Text>
+                            <Text style={{fontSize: 24, color: "#fff", fontWeight: "500", alignSelf: "center", paddingBottom: 10}}>Expected Grad Date: 69420</Text>
+                            <Text style={{fontSize: 24, color: "#fff", fontWeight: "500", alignSelf: "center", paddingBottom: 10}}>In Progress Hours: 420</Text>
+                        </View>
+                    </View>
+                </Modal>
+            </GestureRecognizer>
             <Modal animationType="slide" transparent={false} visible={modalVisible} onRequestClose={() => setModalVisible(!modalVisible)}>
                 <View style={styles.centeredContent}>
                     <Pressable onPress={() => setModalVisible(false)}>
