@@ -1,7 +1,6 @@
-{
-    "Classes" : {
-        "CS2400": [
-            {
+
+[
+        {
                 "shortName" : "CS2400",
                 "fullName" : "Intro to Computer Science I",
                 "college" : "CS",
@@ -9,11 +8,8 @@
                 "description" : "Introduction to computer science, the discipline of computing, and the programming language C++. Topics include elementary C++, computer algorithms, flow of control, procedural abstraction, functions, streams, arrays, strings, objects and classes, polymorphism and operator overloading.",
                 "lab" : "CS2400",
                 "semester" : "Both",
-                "prereq" : [""]
-            }
-        ],
-
-        "EE1024": [
+                "prereq" : []
+            },
             {
                 "shortName" : "EE1024",
                 "fullName" : "Intro to Computer Engineering",
@@ -22,10 +18,8 @@
                 "description" : "Introduction to the field of computer engineering. Develops a knowledge of the fundamentals of Boolean algebra, binary arithmetic, characteristics of logic gates, and flip-flops. Lab work provides hands-on experience with digital systems.",
                 "lab" : "EE1024",
                 "semester" : "Both",
-                "prereq" : [""]
-            }
-        ],
-        "MATH2301": [
+                "prereq" : []
+            },
             {
                 "shortName" : "MATH2301",
                 "fullName" : "Calculus I",
@@ -35,9 +29,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["MATH1300"]
-            }
-        ],
-        "HIST2905": [
+            },
             {
                 "shortName" : "HIST2905",
                 "fullName" : "History of Engineering & Technology in Society",
@@ -46,10 +38,8 @@
                 "description" : "From hand tools, stirrups, and windmills to lasers, batteries, and biotechnology, human history and technology can only be understood together. This course explores the ways in which technology has shaped human society. It focuses on important themes, including the Industrial Revolution, infrastructure, and the historical relationship between technological experts (including engineers, technologists, and scientists), society, and the state. The course pays particular attention to technology’s social and historical consequences; the human and environmental contexts of technological infrastructures; and historical debates over what constitutes an ethical model of technological innovation. It covers the historical and modern development of professions based on technology, including those requiring licensure. In this way, the course provides a critical perspective for an informed approach to technology and society in the modern world.",
                 "lab" : "",
                 "semester" : "Both",
-                "prereq" : [""]
-            }
-        ],
-        "CS2401": [
+                "prereq" : []
+            },
             {
                 "shortName" : "CS2401",
                 "fullName" : "Intro to Computer Science II",
@@ -59,9 +49,7 @@
                 "lab" : "CS2401",
                 "semester" : "Both",
                 "prereq" : ["CS2400, MATH2301"]
-            }
-        ],
-        "ENG1510": [
+            },
             {
                 "shortName" : "ENG1510",
                 "fullName" : "Writing and Rhetoric I",
@@ -70,10 +58,8 @@
                 "description" : "",
                 "lab" : "",
                 "semester" : "Both",
-                "prereq" : [""]
-            }
-        ],
-        "MATH2302": [
+                "prereq" : []
+            },
             {
                 "shortName" : "MATH2302",
                 "fullName" : "Calculus II",
@@ -83,9 +69,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["MATH2302"]
-            }
-        ],
-        "ET1500": [
+            },
             {
                 "shortName" : "ET1500",
                 "fullName" : "Career Orientation",
@@ -94,10 +78,8 @@
                 "description" : "Introduces students to important theories, concepts, and skills related to conducting an effective career search for co-op and full-time positions. In this course, career-related issues are discussed, and students complete assignments that relate to the main course topics.",
                 "lab" : "",
                 "semester" : "Spring",
-                "prereq" : [""]
-            }
-        ],
-        "CS3000": [
+                "prereq" : []
+            },
             {
                 "shortName" : "CS3000",
                 "fullName" : "Intro to Discrete Structures",
@@ -107,9 +89,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["CS2400"]
-            }
-        ],
-        "EE3713": [
+            },
             {
                 "shortName" : "EE3713",
                 "fullName" : "Applied Probability and Statistics for EE",
@@ -119,9 +99,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["MATH2302"]
-            }
-        ],
-        "CS2653": [
+            },
             {
                 "shortName" : "CS2653",
                 "fullName" : "Professional & Ethical Computing",
@@ -131,9 +109,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["CS2400"]
-            }
-        ],
-        "CS3560": [
+            },
             {
                 "shortName" : "CS3560",
                 "fullName" : "Software Engineering Tools",
@@ -143,10 +119,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["CS3610"]
-            }
-        ],
-
-        "CS3610": [
+            },
             {
                 "shortName" : "CS3610",
                 "fullName" : "Data Structures",
@@ -156,9 +129,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["CS2401", "CS3000"]
-            }
-        ],
-        "MATH3200": [
+            },
             {
                 "shortName" : "MATH3200",
                 "fullName" : "Applied Linear Algebra",
@@ -168,9 +139,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["MATH2301"]
-            }
-        ],
-        "MATH3210": [
+            },
             {
                 "shortName" : "MATH3210",
                 "fullName" : "Linear Algebra",
@@ -180,9 +149,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["MATH2302", "CS3000"]
-            }
-        ],
-        "PHYS2055": [
+            },
             {
                 "shortName" : "PHYS2052",
                 "fullName" : "General Physics I Laboratory",
@@ -192,10 +159,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["PHYS2054"]
-            }
-        ],
-
-        "PHYS2052": [
+            },
             {
                 "shortName" : "PHYS2052",
                 "fullName" : "General Physics I",
@@ -205,10 +169,7 @@
                 "lab" : "PHYS2055",
                 "semester" : "Both",
                 "prereq" : ["MATH2301"]
-            }
-        ],
-
-        "PHYS2057": [
+            },
             {
                 "shortName" : "PHYS2057",
                 "fullName" : "General Physics II Laboratory",
@@ -218,9 +179,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["PHYS2056"]
-            }
-        ],
-        "PHYS2056": [
+            },
             {
                 "shortName" : "PHYS2056",
                 "fullName" : "General Physics II: Electricity and Magnetism",
@@ -230,9 +189,7 @@
                 "lab" : "PHYS2055",
                 "semester" : "Both",
                 "prereq" : ["MATH2301"]
-            }
-        ],
-        "CS3200": [
+            },
             {
                 "shortName" : "CS3200",
                 "fullName" : "Organization of Programming Languages",
@@ -242,10 +199,7 @@
                 "lab" : "",
                 "semester" : "Fall",
                 "prereq" : ["CS3610"]
-            }
-        ],
-
-        "CS4040": [
+            },
             {
                 "shortName" : "CS4040",
                 "fullName" : "Design and Analysis of Algorithms",
@@ -255,10 +209,7 @@
                 "lab" : "",
                 "semester" : "Fall",
                 "prereq" : ["CS3610"]
-            }
-        ],
-
-        "EE3613": [
+            },
             {
                 "shortName" : "EE3613",
                 "fullName" : "Computer Organization",
@@ -268,9 +219,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["CS2400", "EE1024"]
-            }
-        ],
-        "CS4100": [
+            },
             {
                 "shortName" : "CS4100",
                 "fullName" : "Introduction to Formal Languages and Compilers",
@@ -280,11 +229,7 @@
                 "lab" : "",
                 "semester" : "Spring",
                 "prereq" : ["CS3200", "CS3610"]
-            }
-        ],
-
-
-        "EE3954": [
+            },
             {
                 "shortName" : "EE3954",
                 "fullName" : "Microprocessors and Microcontrollers",
@@ -294,10 +239,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["CS2400", "EE1024"]
-            }
-        ],
-
-        "CS4000": [
+            },
             {
                 "shortName" : "CS4000",
                 "fullName" : "Introduction to Distributed, Parallel, and Web-Centric Computing",
@@ -307,10 +249,7 @@
                 "lab" : "",
                 "semester" : "Spring",
                 "prereq" : ["CS3560", "CS3610"]
-            }
-        ],
-
-        "CS4560": [
+            },
             {
                 "shortName" : "CS4560",
                 "fullName" : "Software Design and Development I",
@@ -320,9 +259,7 @@
                 "lab" : "",
                 "semester" : "Fall",
                 "prereq" : ["CS3560", "CS3610"]
-            }
-        ],
-        "CS4420": [
+            },
             {
                 "shortName" : "CS4420",
                 "fullName" : "Operating Systems",
@@ -332,9 +269,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["EE3613", "CS3610", "EE3954"]
-            }
-        ],
-        "CS4561": [
+            },
             {
                 "shortName" : "CS4561",
                 "fullName" : "Software Design and Development II",
@@ -344,12 +279,7 @@
                 "lab" : "",
                 "semester" : "Spring",
                 "prereq" : ["CS4560"]
-            }
-        ],
-
-
-
-        "CHEM1510": [
+            },
             {
                 "shortName" : "CHEM1510",
                 "fullName" : "Fundamentals of Chemistry I",
@@ -359,10 +289,7 @@
                 "lab" : "CHEM1510",
                 "semester" : "Both",
                 "prereq" : []
-            }
-        ],
-
-        "CHEM1520": [
+            },
             {
                 "shortName" : "CHEM1520",
                 "fullName" : "Fundamentals of Chemistry II",
@@ -372,9 +299,7 @@
                 "lab" : "CHEM1520",
                 "semester" : "Both",
                 "prereq" : ["CHEM1510"]
-            }
-        ],
-        "PBIO1140": [
+            },
             {
                 "shortName" : "PBIO1140",
                 "fullName" : "Foundations of Plant Biology",
@@ -383,10 +308,8 @@
                 "description" : "Introduces the concepts of plant physiology and cellular and molecular biology that are the foundation of all biological processes. Topics include DNA structure and function leading to genetics and evolution, theories of the origins of life leading to cell structure and function, and bioenergetics. The lab provides supplemental information and hands on activities to reinforce the lecture topics.",
                 "lab" : "PBIO1140",
                 "semester" : "Both",
-                "prereq" : [""]
-            }
-        ],
-        "PBIO1150": [
+                "prereq" : []
+            },
             {
                 "shortName" : "PBIO1150",
                 "fullName" : "Plant Structure and Development",
@@ -396,9 +319,7 @@
                 "lab" : "PBIO1150",
                 "semester" : "Both",
                 "prereq" : ["PBIO1140"]
-            }
-        ],
-        "BIOS1705": [
+            },
             {
                 "shortName" : "BIOS1705",
                 "fullName" : "Biological Sciences I Laboratory",
@@ -408,10 +329,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["BIOS1700"]
-            }
-        ],
-
-        "BIOS1700": [
+            },
             {
                 "shortName" : "BIOS1700",
                 "fullName" : "Biological Sciences I: Molecules and Cells",
@@ -420,11 +338,8 @@
                 "description" : "Cellular and molecular biology. Designed for science majors and preprofessional students. Introduction to the chemistry of life, cell structure and function, and the principles of inheritance.",
                 "lab" : "BIOS1705",
                 "semester" : "Both",
-                "prereq" : [""]
-            }
-        ],
-
-        "BIOS1715": [
+                "prereq" : []
+            },
             {
                 "shortName" : "BIOS1715",
                 "fullName" : "Biological Sciences II Laboratory",
@@ -434,9 +349,7 @@
                 "lab" : "",
                 "semester" : "Both",
                 "prereq" : ["BIOS1710"]
-            }
-        ],
-        "BIOS1710": [
+            },
             {
                 "shortName" : "BIOS1710",
                 "fullName" : "Biological Sciences II: Ecology, Evolution, Animal Body Systems",
@@ -447,6 +360,4 @@
                 "semester" : "Both",
                 "prereq" : ["BIOS1700"]
             }
-        ]
-    }
-}
+    ]

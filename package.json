@@ -9,8 +9,10 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.23.1",
     "@react-navigation/bottom-tabs": "^6.5.20",
     "@react-navigation/material-top-tabs": "^6.6.13",
+    "@reduxjs/toolkit": "^2.2.3",
     "expo": "~50.0.14",
     "expo-status-bar": "~1.11.1",
     "firebase": "^10.10.0",
@@ -19,11 +21,15 @@
     "react-native-safe-area-context": "4.8.2",
     "react-native-screens": "~3.29.0",
     "react-native-tab-view": "^3.5.2",
+    "react-redux": "^9.1.0",
+    "redux": "^5.0.1",
+    "redux-api-middleware": "^3.2.1",
     "typescript": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "@types/react": "~18.2.45"
+    "@types/react": "~18.2.45",
+    "@types/redux-api-middleware": "^3.2.6"
   },
   "private": true
 }
