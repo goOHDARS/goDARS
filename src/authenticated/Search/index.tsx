@@ -6,8 +6,8 @@
 */
 
 import React, { ReactNode, useState } from "react";
-import { View, StyleSheet, Text, Platform, ScrollView, SafeAreaView, TextInput, FlatList, StatusBar} from "react-native";
-
+import { View, StyleSheet, Text, Platform, ScrollView, SafeAreaView, TextInput, FlatList, StatusBar, Pressable} from "react-native";
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default function Search(){
   const [search, setSearch] = useState("");
@@ -16,13 +16,54 @@ export default function Search(){
     const formatSearch = search.toUpperCase();
   }
 
-  
-  const info = [{name:"CS2400", GPA:3}, {name:"CS2400", GPA:3}, {name:"CS2400", GPA:3}, {name:"CS2400", GPA:3}, {name:"CS2400", GPA:3}, {name:"CS2400", GPA:3}, {name:"CS2400", GPA:3}, {name:"CS2400", GPA:3}];
+  const [list, setList] = useState([{name:"EE1024", GPA:4}]);
+  const info = [{name:"CS2400", GPA:3}, {name:"CS2401", GPA:3}, {name:"CS2400", GPA:3}, {name:"CS2401", GPA:3}, {name:"CS2401", GPA:3}, {name:"CS2401", GPA:3}, {name:"CS2400", GPA:3}, {name:"CS2401", GPA:3}, {name:"CS4000", GPA:3}];
 
+
+
+  const selectedList = (Class:string, Num:number) => {
+    let x = JSON.stringify({ name:Class, GPA:Num })
+    const Template = list.map(item => JSON.stringify(item))
+    if (!Template.includes(x)){
+      setList(prev => {
+        const temp = [...prev]
+        temp.push({name: Class, GPA: Num});
+        alert("Class Added to List")
+        return temp;
+      })
+      //alert("Class Added to List")
+    }
+  }
+
+
+
+  const removeList = (Class:string, Num:number) => {
+    let x = JSON.stringify({ name:Class, GPA:Num })
+    const Template = list.map(item => JSON.stringify(item))
+
+    setList(prev => {
+      const temp = [...prev]
+      temp.filter(item => {
+        return item.name != Class && item.GPA != Num
+      });
+      alert(temp.length);
+      return temp;
+    })
+    // setList(prev => {
+    //   prev.filter(item => {
+    //     return item.name != Class && item.GPA != Num
+    //   });
+    //   alert(prev.length);
+    //   return prev;
+    // })
+  }
+    //alert("Class Removed From List")
+    
+  
 
   return (
-    <ScrollView keyboardShouldPersistTaps = {"never"} showsVerticalScrollIndicator = {true}>
-      <SafeAreaView style = {{flex:1, marginHorizontal:20}}>
+    <ScrollView keyboardShouldPersistTaps = {"never"} showsVerticalScrollIndicator = {true} contentContainerStyle={{ backgroundColor: "#fff" }} style ={{backgroundColor: "#fff"}}>
+      <SafeAreaView style = {{flex:1, marginHorizontal:20, backgroundColor: "#fff"}}>
         <TextInput 
           placeholder= {"Search Course ..."}
           clearButtonMode = {"unless-editing"} 
@@ -30,29 +71,67 @@ export default function Search(){
           autoCorrect={true} value={search}
           onChangeText={(search) => handleSearch(search)}
         />
-          <View style={styles.item}>
-            <Text>
+        {/* adds items to a list */}
+            <FlatList
+              data={info}
+              renderItem={({item}) => (
+                <Pressable onPress={() => selectedList(item.name, item.GPA)}>
+
+                  <View style={styles.item}>
+                    <Text> {item.name} {"                                           Credits:"} {item.GPA}</Text>
+                  </View>
+                
+                </Pressable>
+              )}>
+              
+            </FlatList>
+          {/* Removes items from a list */}
+            <FlatList
+              data={list}
+              renderItem={({item}) => (
+                <Pressable onPress={() => removeList(item.name, item.GPA)}>
+
+                  <View style={styles.item2}>
+                    <Text> {item.name} {"                                           Credits:"} {item.GPA}</Text>
+                  </View>
+                
+                </Pressable>
+              )}>
+              
+            </FlatList>
+            {/* <Pressable onPress={() => selectedList()}>
+              <Text>
               CS2400
-            </Text>
-            <Text>
-              4
-            </Text>
-          </View>
+              </Text>
+              <Text>
+                4
+              </Text>
+            </Pressable> */}
       </SafeAreaView> 
      </ScrollView>
     );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: StatusBar.currentHeight || 0,
+    marginTop: StatusBar.currentHeight,
   },
   item: {
     backgroundColor: '#E7ECC3',
-    padding: 10,
-    marginVertical: 4,
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 16,
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  item2: {
+    backgroundColor: '#EEFFAA',
+    padding: 20,
+    marginVertical: 8,
     marginHorizontal: 16,
     flex: 1,
     flexDirection: "row",
@@ -63,38 +142,3 @@ const styles = StyleSheet.create({
   },
 
 });
-
-
-// const SwitchComponent: React.FunctionComponent<{}> = () => {
-// const [search, setSearch] = useState('');
-
-// const updateSearch = (search:string) => {
-//   setSearch(search);
-// };
-
-
-
-
-// return (
-//     <ScrollView keyboardShouldPersistTaps = {"never"} showsVerticalScrollIndicator = {true}>
-//         <View>
-//             <SearchBar
-//             placeholder={'Search Courses...'}
-//             onChangeText={updateSearch}
-//             value={search}
-//             lightTheme = {true}
-//             round = {true}
-//             containerStyle = {{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white' }}
-//             />
-//         </View>
-//     </ScrollView>
-// );
-// };
-
-// const styles = StyleSheet.create({
-// view: {
-//   margin: 10,
-// },
-// });
-
-// export default SwitchComponent;
