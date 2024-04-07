@@ -27,7 +27,7 @@ export default function App() {
 					  let iconName;
 					  let size = 26;
 					  if (route.name === 'Home') {
-						iconName = focused ? 'home' : 'home-outline';
+						iconName = focused ? 'grid' : 'grid-outline';
 					  } else if (route.name === 'Search') {
 						iconName = focused ? 'search-circle-sharp' : 'search-circle-outline';
 					  }
