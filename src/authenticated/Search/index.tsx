@@ -5,12 +5,37 @@
  * @date     April 06, 2024
 */
 
-import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import React, { ReactNode, useState } from "react";
+import { View, StyleSheet, Text, Platform, TouchableWithoutFeedback, Keyboard, ScrollView } from "react-native";
+import { SearchBar } from '@rneui/themed';
 
-export default function Search(){
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white' }}>
-            <Text>Home!</Text>
-        </View>);
-}
+const SwitchComponent: React.FunctionComponent<{}> = () => {
+const [search, setSearch] = useState('');
+
+const updateSearch = (search:string) => {
+  setSearch(search);
+};
+
+return (
+    <ScrollView keyboardShouldPersistTaps = {"never"} showsVerticalScrollIndicator = {true}>
+        <View style={{paddingTop: Platform.OS === "ios" ? 70 : 0,}}>
+            <SearchBar
+            placeholder={'Search Courses...'}
+            onChangeText={updateSearch}
+            value={search}
+            lightTheme = {true}
+            round = {true}
+            containerStyle = {{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white' }}
+            />
+        </View>
+    </ScrollView>
+);
+};
+
+const styles = StyleSheet.create({
+view: {
+  margin: 10,
+},
+});
+
+export default SwitchComponent;
