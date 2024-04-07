@@ -3,7 +3,7 @@ import user from "./user";
 
 const createRootReducer = () =>
   combineReducers({
-    user,
-  });
+  		user,
+	});
 
 export default createRootReducer;
