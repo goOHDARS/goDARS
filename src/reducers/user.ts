@@ -5,17 +5,20 @@ type UserState = {
   loading: boolean;
   errors: string[];
   user?: {
-	name?: string,
-	pid?: string,
-	year?: number,
-	onboarded?: boolean,
-  }
+    name: string;
+    email: string;
+    password: string;
+    pid: string;
+    major: string;
+    year: number;
+    onboarded: boolean;
+  };
 };
 
 const initialState: UserState = {
   loading: false,
   errors: [],
-  user: undefined
+  user: undefined,
 };
 
 export default (
@@ -28,13 +31,29 @@ export default (
         ...state,
         loading: true,
       };
+    case user.SET_USER_REQUEST:
+      return {
+        ...state,
+        loading: true,
+      };
     case user.GET_USER_SUCCESS:
       return {
         ...state,
         loading: false,
-		user: action.payload,
+        user: action.payload,
+      };
+    case user.GET_USER_SUCCESS:
+      return {
+        ...state,
+        loading: false,
       };
     case user.GET_USER_FAILURE:
+      return {
+        ...state,
+        loading: false,
+        errors: ["errors"],
+      };
+    case user.SET_USER_FAILURE:
       return {
         ...state,
         loading: false,
@@ -43,4 +62,5 @@ export default (
     default:
       return state;
   }
+  return state;
 };
