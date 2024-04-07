@@ -17,8 +17,8 @@ const updateSearch = (search:string) => {
 };
 
 return (
-    <ScrollView keyboardShouldPersistTaps = {"never"} showsVerticalScrollIndicator = {true}>
-        <View style={{paddingTop: Platform.OS === "ios" ? 70 : 0,}}>
+    <ScrollView style={{backgroundColor: "#fff"}} keyboardShouldPersistTaps = {"never"} showsVerticalScrollIndicator = {true}>
+        <View style={{paddingTop: Platform.OS === "ios" ? 70 : 0, backgroundColor: "#fff"}}>
             <SearchBar
             placeholder={'Search Courses...'}
             onChangeText={updateSearch}
@@ -28,14 +28,7 @@ return (
             containerStyle = {{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white' }}
             />
         </View>
-    </ScrollView>
-);
+    </ScrollView>);
 };
-
-const styles = StyleSheet.create({
-view: {
-  margin: 10,
-},
-});
 
 export default SwitchComponent;
