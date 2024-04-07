@@ -44,20 +44,14 @@ export default function Search(){
     setList(prev => {
       const temp = [...prev]
       temp.filter(item => {
-        return item.name != Class && item.GPA != Num
+        if (item.name == Class && item.GPA == Num){
+          temp.pop();
+        }
       });
-      alert(temp.length);
+      alert("Class Removed From List");
       return temp;
     })
-    // setList(prev => {
-    //   prev.filter(item => {
-    //     return item.name != Class && item.GPA != Num
-    //   });
-    //   alert(prev.length);
-    //   return prev;
-    // })
   }
-    //alert("Class Removed From List")
     
   
 
