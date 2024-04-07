@@ -7,22 +7,24 @@ export const authenticatedRequestWithDispatch = async (
   requestType: string,
   successType: string,
   errorType: string,
-  data = null
+  method: string = "GET",
+  data: string | null = null
 ) => {
   const userToken = await auth.currentUser?.getIdToken();
   const headers = {
     "Content-Type": "application/json",
     Authorization: `Bearer ${userToken}`,
   };
-
+  console.log("starting auth request");
   requestWithDispatch(
     dispatch,
     endpoint,
     requestType,
     successType,
     errorType,
-    data,
-    headers
+    method,
+    data as string,
+    headers,
   );
 };
 
@@ -32,16 +34,19 @@ export const requestWithDispatch = async (
   requestType: string,
   successType: string,
   errorType: string,
-  data = null,
+  data: string | null = null,
+  method: string = "GET",
   headers = { "Content-Type": "application/json" }
 ) => {
   try {
     dispatch({ type: requestType });
+    console.log("fetching data")
     const response = await fetch(endpoint, {
       headers,
+      method,
       body: data,
     });
-    console.log(response)
+    console.log(response);
     dispatch({ type: successType, payload: response.json() });
   } catch {
     dispatch({ type: errorType });
